@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+    <defs>
+        <filter id="filter" color-interpolation-filters="sRGB">
+            <feFlood flood-color="black" result="black"/>
+            <feComposite in="black" in2="SourceAlpha" operator="in" result="composite"/>
+            <feComponentTransfer in="composite" result="transfer">
+                <feFuncR type="table" tableValues="0 0"/>
+                <feFuncG type="table" tableValues="0 0"/>
+                <feFuncB type="table" tableValues="0 0"/>
+                <feFuncA type="table" tableValues="0 1"/>
+            </feComponentTransfer>
+            <feBlend in="SourceGraphic" in2="transfer" mode="normal"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd" filter="url(#filter)">
+        <rect width="16" height="1.455" x="2" y="2" rx=".727" fill="#000"/>
+        <rect width="16" height="1.455" x="2" y="16.545" rx=".727" fill="#000"/>
+        <rect width="16" height="1.455" x="2" y="9.273" rx=".727" fill="#000"/>
+    </g>
+</svg>
